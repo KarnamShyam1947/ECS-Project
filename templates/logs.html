@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Logs | ECS-Project</title>
+    </head>
+
+    <body>
+        <h1>My Logs</h1>
+
+        <div>
+            <textarea name="" id="" cols="150" rows="100">
+                {% for line in logs %}
+                    {{ line }}
+                {% endfor %}
+            </textarea>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gallery | ECS-Project</title>
+    </head>
+
+    <body>
+        <h1>This is gallery page</h1>
+
+        <div>
+            {% for image in images %}
+                <a href="#">
+                    <img src="{{ url_for('display_image', filename=image) }}" alt="failed to load image" width="300" height="300">
+                </a>
+            {% endfor %}
+        </div>
+    </body>
+</html>
